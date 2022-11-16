@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ugaritic_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Ugaritic<mark>乌加列（里）文/乌加里特楔形文字</mark></h2>
+<p>共有<abbr>32</abbr>个区位</p>
+<ul>
+<li><span>&#66432;</span><em>10380</em></li>
+<li><span>&#66433;</span><em>10381</em></li>
+<li><span>&#66434;</span><em>10382</em></li>
+<li><span>&#66435;</span><em>10383</em></li>
+<li><span>&#66436;</span><em>10384</em></li>
+<li><span>&#66437;</span><em>10385</em></li>
+<li><span>&#66438;</span><em>10386</em></li>
+<li><span>&#66439;</span><em>10387</em></li>
+<li><span>&#66440;</span><em>10388</em></li>
+<li><span>&#66441;</span><em>10389</em></li>
+<li><span>&#66442;</span><em>1038a</em></li>
+<li><span>&#66443;</span><em>1038b</em></li>
+<li><span>&#66444;</span><em>1038c</em></li>
+<li><span>&#66445;</span><em>1038d</em></li>
+<li><span>&#66446;</span><em>1038e</em></li>
+<li><span>&#66447;</span><em>1038f</em></li>
+<li><span>&#66448;</span><em>10390</em></li>
+<li><span>&#66449;</span><em>10391</em></li>
+<li><span>&#66450;</span><em>10392</em></li>
+<li><span>&#66451;</span><em>10393</em></li>
+<li><span>&#66452;</span><em>10394</em></li>
+<li><span>&#66453;</span><em>10395</em></li>
+<li><span>&#66454;</span><em>10396</em></li>
+<li><span>&#66455;</span><em>10397</em></li>
+<li><span>&#66456;</span><em>10398</em></li>
+<li><span>&#66457;</span><em>10399</em></li>
+<li><span>&#66458;</span><em>1039a</em></li>
+<li><span>&#66459;</span><em>1039b</em></li>
+<li><span>&#66460;</span><em>1039c</em></li>
+<li><span>&#66461;</span><em>1039d</em></li>
+<li><span>&#66462;</span><em>1039e</em></li>
+<li><span>&#66463;</span><em>1039f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

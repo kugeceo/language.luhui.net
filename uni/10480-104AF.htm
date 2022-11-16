@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Osmanya_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Osmanya<mark>欧斯曼亚文或奥斯马尼亚字母-1922年后索马里开始采用奥斯马尼亚字母(Osmanya)拼写，在1960年代时奥斯马尼亚字母与拉丁字母两者并行使用。</mark></h2>
+<p>共有<abbr>48</abbr>个区位</p>
+<ul>
+<li><span>&#66688;</span><em>10480</em></li>
+<li><span>&#66689;</span><em>10481</em></li>
+<li><span>&#66690;</span><em>10482</em></li>
+<li><span>&#66691;</span><em>10483</em></li>
+<li><span>&#66692;</span><em>10484</em></li>
+<li><span>&#66693;</span><em>10485</em></li>
+<li><span>&#66694;</span><em>10486</em></li>
+<li><span>&#66695;</span><em>10487</em></li>
+<li><span>&#66696;</span><em>10488</em></li>
+<li><span>&#66697;</span><em>10489</em></li>
+<li><span>&#66698;</span><em>1048a</em></li>
+<li><span>&#66699;</span><em>1048b</em></li>
+<li><span>&#66700;</span><em>1048c</em></li>
+<li><span>&#66701;</span><em>1048d</em></li>
+<li><span>&#66702;</span><em>1048e</em></li>
+<li><span>&#66703;</span><em>1048f</em></li>
+<li><span>&#66704;</span><em>10490</em></li>
+<li><span>&#66705;</span><em>10491</em></li>
+<li><span>&#66706;</span><em>10492</em></li>
+<li><span>&#66707;</span><em>10493</em></li>
+<li><span>&#66708;</span><em>10494</em></li>
+<li><span>&#66709;</span><em>10495</em></li>
+<li><span>&#66710;</span><em>10496</em></li>
+<li><span>&#66711;</span><em>10497</em></li>
+<li><span>&#66712;</span><em>10498</em></li>
+<li><span>&#66713;</span><em>10499</em></li>
+<li><span>&#66714;</span><em>1049a</em></li>
+<li><span>&#66715;</span><em>1049b</em></li>
+<li><span>&#66716;</span><em>1049c</em></li>
+<li><span>&#66717;</span><em>1049d</em></li>
+<li><span>&#66718;</span><em>1049e</em></li>
+<li><span>&#66719;</span><em>1049f</em></li>
+<li><span>&#66720;</span><em>104a0</em></li>
+<li><span>&#66721;</span><em>104a1</em></li>
+<li><span>&#66722;</span><em>104a2</em></li>
+<li><span>&#66723;</span><em>104a3</em></li>
+<li><span>&#66724;</span><em>104a4</em></li>
+<li><span>&#66725;</span><em>104a5</em></li>
+<li><span>&#66726;</span><em>104a6</em></li>
+<li><span>&#66727;</span><em>104a7</em></li>
+<li><span>&#66728;</span><em>104a8</em></li>
+<li><span>&#66729;</span><em>104a9</em></li>
+<li><span>&#66730;</span><em>104aa</em></li>
+<li><span>&#66731;</span><em>104ab</em></li>
+<li><span>&#66732;</span><em>104ac</em></li>
+<li><span>&#66733;</span><em>104ad</em></li>
+<li><span>&#66734;</span><em>104ae</em></li>
+<li><span>&#66735;</span><em>104af</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

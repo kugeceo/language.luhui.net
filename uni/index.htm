@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>全球区位码分布总表Basic Latin_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left home_active">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+<script src="con_Tent_left.js"></script>
+
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_rCon">
+<h2>欢迎你</h2>
+<u>计算机字节文明的探索者们</u>
+<div class="con_Tent_rContxt" data-reactid="325">
+<i class="fa z01-icon189 fa-5x mt-4"></i>
+<p>这里收集的是目前最完整的Unicode国际字符表清单</p>
+<p>需要注意的明，Unicode字符集并不是一成不变的，有不同的制订标准和版本迭代，同时作为技术有一定的延迟性（这也包括国标），所以有时会出现国际码总位数在不同的版本标准上不同的现象，我们尽量保持了完整的目录，这缘于<a href="http://f.ziti163.com">逐浪字库</a>研发的需要（有的人把字库开发当作一个图形设计工作，有的人把字库研发当作一个创意工作 ，有的人把字库工作当作一个概念炒作，但我们认为这是一个纯粹的编码研发工程体系，需要严谨面对，不止是倒腾图形工具这么简单）。</p>
+<p>整个编码的描述，我们尽量提供足够多的背景，同时开放给业界同行，汲取中日韩以及繁体汉字人群的使用习惯，进行完整的描述。</p>
+<p>在HTML中，可以采用如 <code class="bg-light">&amp;#10084;</code>输出一个&#10084;符号，这也是网页中常用符号的方法。</p>
+<p>在网页中，有时候我们会需要一些符号，例如：倒三角 ▼。如果要让网页显示这种符号，显然用字符的方式比较好，体积小到可以忽略不计同时还可以方便用 CSS 定义样式等。但是直接把这个倒三角复制进网页中的话，虽然可以，但是不合理，这时候我们就要用到对应图标的实体字符，例如通过查询可以看到倒三角对应的 Unicode HTML 代码为 <code class="bg-light">&amp;#9660;</code>，复制进 HTML 文件中就可以看到了。</p>
+
+<p>在CSS中，则可以采用 <code class="bg-light">.class::before { content: '\2689'; ...</code>  方法输出一个&#9865;符号。</p>
+<p>由于涉及二进制转码问题，这样的原生符号输出，仅支持数字开始的码，如274E（<a href="2700-27BF.htm?id=80">Dingbats符号集</a>符号集即此类型）。</p>
+<p>目前业界对于图标解决方案则是生成一套专用字体来输出，比如<a href="http://code.z01.com/Boot/font.html">Font Awesome奥林图标</a>以及逐浪软件的Afont系列。</p>
+
+
+<a href="4E00-9FFF.htm?id=101" class="btn btn-primary">CJK中文大字符集(共22004个区位)</a>
+<a href="3200-32FF.htm?id=97" class="btn btn-secondary">中日韩带括号与圈型字母和月份</a>
+<a href="FE30-FE4F.htm?id=115" class="btn btn-success">中日韩兼容性表格符号(竖行写作之符号）</a>
+<a href="E000-F8FF.htm?id=108" class="btn btn-danger">Private Use Area个人符号区（有大量的预置符号）</a>
+<a href="2700-27BF.htm?id=80" class="btn btn-warning">Dingbats经典符号集</a>
+<a href="0F00-0FFF.htm?id=28" class="btn btn-info">Tibetan藏语字符-中华人民共和国不可分割的领土</a>
+</div>
+
+<div class="pt-4">
+<p>扩展：</p>
+<ul>
+<li><a href="//v.ziti163.com">用这个工具你也可以在线生产字体</a></li>
+<li><a href="http://www.ziti163.com/Item/2084">Unicode 4.0 字符统计表（98639个字符）</a></li>
+<li><a href="http://www.ziti163.com/Item/2096">网页编码就是那点事</a></li>
+<li><a href="http://www.ziti163.com/Item/2097">unicode,ansi,utf-8,unicode big endian编码的区别(随便说说字符集和编码 )</a></li>
+<li><a href="http://www.ziti163.com/Item/2097">中华人民共和国汉字及字符规范标准全收集</a></li>
+<li><a href="https://unicode-table.com/">unicode-table</a></li>
+</ul>
+</div>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

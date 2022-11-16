@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Small Form Variants_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Small Form Variants<mark>小型变体形式；小写变体；小写符号变体</mark></h2>
+<p>共有<abbr>32</abbr>个区位</p>
+<ul>	
+<li><span>&#65104;</span><em>fe50</em></li>
+<li><span>&#65105;</span><em>fe51</em></li>
+<li><span>&#65106;</span><em>fe52</em></li>
+<li><span>&#65107;</span><em>fe53</em></li>
+<li><span>&#65108;</span><em>fe54</em></li>
+<li><span>&#65109;</span><em>fe55</em></li>
+<li><span>&#65110;</span><em>fe56</em></li>
+<li><span>&#65111;</span><em>fe57</em></li>
+<li><span>&#65112;</span><em>fe58</em></li>
+<li><span>&#65113;</span><em>fe59</em></li>
+<li><span>&#65114;</span><em>fe5a</em></li>
+<li><span>&#65115;</span><em>fe5b</em></li>
+<li><span>&#65116;</span><em>fe5c</em></li>
+<li><span>&#65117;</span><em>fe5d</em></li>
+<li><span>&#65118;</span><em>fe5e</em></li>
+<li><span>&#65119;</span><em>fe5f</em></li>
+<li><span>&#65120;</span><em>fe60</em></li>
+<li><span>&#65121;</span><em>fe61</em></li>
+<li><span>&#65122;</span><em>fe62</em></li>
+<li><span>&#65123;</span><em>fe63</em></li>
+<li><span>&#65124;</span><em>fe64</em></li>
+<li><span>&#65125;</span><em>fe65</em></li>
+<li><span>&#65126;</span><em>fe66</em></li>
+<li><span>&#65127;</span><em>fe67</em></li>
+<li><span>&#65128;</span><em>fe68</em></li>
+<li><span>&#65129;</span><em>fe69</em></li>
+<li><span>&#65130;</span><em>fe6a</em></li>
+<li><span>&#65131;</span><em>fe6b</em></li>
+<li><span>&#65132;</span><em>fe6c</em></li>
+<li><span>&#65133;</span><em>fe6d</em></li>
+<li><span>&#65134;</span><em>fe6e</em></li>
+<li><span>&#65135;</span><em>fe6f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

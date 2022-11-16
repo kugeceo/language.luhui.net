@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shavian_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+
+
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Shavian<mark>肖伯纳字母</mark></h2>
+<p>共有<abbr>48</abbr>个区位</p>
+<ul>
+<li><span>&#66640;</span><em>10450</em></li>
+<li><span>&#66641;</span><em>10451</em></li>
+<li><span>&#66642;</span><em>10452</em></li>
+<li><span>&#66643;</span><em>10453</em></li>
+<li><span>&#66644;</span><em>10454</em></li>
+<li><span>&#66645;</span><em>10455</em></li>
+<li><span>&#66646;</span><em>10456</em></li>
+<li><span>&#66647;</span><em>10457</em></li>
+<li><span>&#66648;</span><em>10458</em></li>
+<li><span>&#66649;</span><em>10459</em></li>
+<li><span>&#66650;</span><em>1045a</em></li>
+<li><span>&#66651;</span><em>1045b</em></li>
+<li><span>&#66652;</span><em>1045c</em></li>
+<li><span>&#66653;</span><em>1045d</em></li>
+<li><span>&#66654;</span><em>1045e</em></li>
+<li><span>&#66655;</span><em>1045f</em></li>
+<li><span>&#66656;</span><em>10460</em></li>
+<li><span>&#66657;</span><em>10461</em></li>
+<li><span>&#66658;</span><em>10462</em></li>
+<li><span>&#66659;</span><em>10463</em></li>
+<li><span>&#66660;</span><em>10464</em></li>
+<li><span>&#66661;</span><em>10465</em></li>
+<li><span>&#66662;</span><em>10466</em></li>
+<li><span>&#66663;</span><em>10467</em></li>
+<li><span>&#66664;</span><em>10468</em></li>
+<li><span>&#66665;</span><em>10469</em></li>
+<li><span>&#66666;</span><em>1046a</em></li>
+<li><span>&#66667;</span><em>1046b</em></li>
+<li><span>&#66668;</span><em>1046c</em></li>
+<li><span>&#66669;</span><em>1046d</em></li>
+<li><span>&#66670;</span><em>1046e</em></li>
+<li><span>&#66671;</span><em>1046f</em></li>
+<li><span>&#66672;</span><em>10470</em></li>
+<li><span>&#66673;</span><em>10471</em></li>
+<li><span>&#66674;</span><em>10472</em></li>
+<li><span>&#66675;</span><em>10473</em></li>
+<li><span>&#66676;</span><em>10474</em></li>
+<li><span>&#66677;</span><em>10475</em></li>
+<li><span>&#66678;</span><em>10476</em></li>
+<li><span>&#66679;</span><em>10477</em></li>
+<li><span>&#66680;</span><em>10478</em></li>
+<li><span>&#66681;</span><em>10479</em></li>
+<li><span>&#66682;</span><em>1047a</em></li>
+<li><span>&#66683;</span><em>1047b</em></li>
+<li><span>&#66684;</span><em>1047c</em></li>
+<li><span>&#66685;</span><em>1047d</em></li>
+<li><span>&#66686;</span><em>1047e</em></li>
+<li><span>&#66687;</span><em>10477f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

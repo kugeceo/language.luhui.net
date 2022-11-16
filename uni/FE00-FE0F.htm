@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Variation Selectors_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Variation Selectors<mark>字型变换选取器</mark></h2>
+<p>共有<abbr>16</abbr>个区位</p>
+<ul>	
+<li><span>&#65024;</span><em>fe00</em></li>
+<li><span>&#65025;</span><em>fe01</em></li>
+<li><span>&#65026;</span><em>fe02</em></li>
+<li><span>&#65027;</span><em>fe03</em></li>
+<li><span>&#65028;</span><em>fe04</em></li>
+<li><span>&#65029;</span><em>fe05</em></li>
+<li><span>&#65030;</span><em>fe06</em></li>
+<li><span>&#65031;</span><em>fe07</em></li>
+<li><span>&#65032;</span><em>fe08</em></li>
+<li><span>&#65033;</span><em>fe09</em></li>
+<li><span>&#65034;</span><em>fe0a</em></li>
+<li><span>&#65035;</span><em>fe0b</em></li>
+<li><span>&#65036;</span><em>fe0c</em></li>
+<li><span>&#65037;</span><em>fe0d</em></li>
+<li><span>&#65038;</span><em>fe0e</em></li>
+<li><span>&#65039;</span><em>fe0f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

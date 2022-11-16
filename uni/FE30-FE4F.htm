@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CJK Compatibility Forms_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>CJK Compatibility Forms<mark>中日韩兼容性表格符号</mark></h2>
+<p>共有<abbr>32</abbr>个区位</p>
+<ul>
+<li><span>&#65072;</span><em>fe30</em></li>
+<li><span>&#65073;</span><em>fe31</em></li>
+<li><span>&#65074;</span><em>fe32</em></li>
+<li><span>&#65075;</span><em>fe33</em></li>
+<li><span>&#65076;</span><em>fe34</em></li>
+<li><span>&#65077;</span><em>fe35</em></li>
+<li><span>&#65078;</span><em>fe36</em></li>
+<li><span>&#65079;</span><em>fe37</em></li>
+<li><span>&#65080;</span><em>fe38</em></li>
+<li><span>&#65081;</span><em>fe39</em></li>
+<li><span>&#65082;</span><em>fe3a</em></li>
+<li><span>&#65083;</span><em>fe3b</em></li>
+<li><span>&#65084;</span><em>fe3c</em></li>
+<li><span>&#65085;</span><em>fe3d</em></li>
+<li><span>&#65086;</span><em>fe3e</em></li>
+<li><span>&#65087;</span><em>fe3f</em></li>
+<li><span>&#65088;</span><em>fe40</em></li>
+<li><span>&#65089;</span><em>fe41</em></li>
+<li><span>&#65090;</span><em>fe42</em></li>
+<li><span>&#65091;</span><em>fe43</em></li>
+<li><span>&#65092;</span><em>fe44</em></li>
+<li><span>&#65093;</span><em>fe45</em></li>
+<li><span>&#65094;</span><em>fe46</em></li>
+<li><span>&#65095;</span><em>fe47</em></li>
+<li><span>&#65096;</span><em>fe48</em></li>
+<li><span>&#65097;</span><em>fe49</em></li>
+<li><span>&#65098;</span><em>fe4a</em></li>
+<li><span>&#65099;</span><em>fe4b</em></li>
+<li><span>&#65100;</span><em>fe4c</em></li>
+<li><span>&#65101;</span><em>fe4d</em></li>
+<li><span>&#65102;</span><em>fe4e</em></li>
+<li><span>&#65103;</span><em>fe4f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>
