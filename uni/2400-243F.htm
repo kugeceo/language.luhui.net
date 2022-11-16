@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Control Pictures_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Control Pictures<mark>控制图像</mark></h2>
+<p>共有<abbr>64</abbr>个区位</p>
+<ul>
+<li><span>&#9216;</span><em>2400</em></li>
+<li><span>&#9217;</span><em>2401</em></li>
+<li><span>&#9218;</span><em>2402</em></li>
+<li><span>&#9219;</span><em>2403</em></li>
+<li><span>&#9220;</span><em>2404</em></li>
+<li><span>&#9221;</span><em>2405</em></li>
+<li><span>&#9222;</span><em>2406</em></li>
+<li><span>&#9223;</span><em>2407</em></li>
+<li><span>&#9224;</span><em>2408</em></li>
+<li><span>&#9225;</span><em>2409</em></li>
+<li><span>&#9226;</span><em>240a</em></li>
+<li><span>&#9227;</span><em>240b</em></li>
+<li><span>&#9228;</span><em>240c</em></li>
+<li><span>&#9229;</span><em>240d</em></li>
+<li><span>&#9230;</span><em>240e</em></li>
+<li><span>&#9231;</span><em>240f</em></li>	
+	
+<li><span>&#9232;</span><em>2410</em></li>
+<li><span>&#9233;</span><em>2411</em></li>
+<li><span>&#9234;</span><em>2412</em></li>
+<li><span>&#9235;</span><em>2413</em></li>
+<li><span>&#9236;</span><em>2414</em></li>
+<li><span>&#9237;</span><em>2415</em></li>
+<li><span>&#9238;</span><em>2416</em></li>
+<li><span>&#9239;</span><em>2417</em></li>
+<li><span>&#9240;</span><em>2418</em></li>
+<li><span>&#9241;</span><em>2419</em></li>
+<li><span>&#9242;</span><em>241a</em></li>
+<li><span>&#9243;</span><em>241b</em></li>
+<li><span>&#9244;</span><em>241c</em></li>
+<li><span>&#9245;</span><em>241d</em></li>
+<li><span>&#9246;</span><em>241e</em></li>
+<li><span>&#9247;</span><em>241f</em></li>
+<li><span>&#9248;</span><em>2420</em></li>
+<li><span>&#9249;</span><em>2421</em></li>
+<li><span>&#9250;</span><em>2422</em></li>
+<li><span>&#9251;</span><em>2423</em></li>
+<li><span>&#9252;</span><em>2424</em></li>
+<li><span>&#9253;</span><em>2425</em></li>
+<li><span>&#9254;</span><em>2426</em></li>
+<li><span>&#9255;</span><em>2427</em></li>
+<li><span>&#9256;</span><em>2428</em></li>
+<li><span>&#9257;</span><em>2429</em></li>
+<li><span>&#9258;</span><em>242a</em></li>
+<li><span>&#9259;</span><em>242b</em></li>
+<li><span>&#9260;</span><em>242c</em></li>
+<li><span>&#9261;</span><em>242d</em></li>
+<li><span>&#9262;</span><em>242e</em></li>
+<li><span>&#9263;</span><em>242f</em></li>
+<li><span>&#9264;</span><em>2430</em></li>
+<li><span>&#9265;</span><em>2431</em></li>
+<li><span>&#9266;</span><em>2432</em></li>
+<li><span>&#9267;</span><em>2433</em></li>
+<li><span>&#9268;</span><em>2434</em></li>
+<li><span>&#9269;</span><em>2435</em></li>
+<li><span>&#9270;</span><em>2436</em></li>
+<li><span>&#9271;</span><em>2437</em></li>
+<li><span>&#9272;</span><em>2438</em></li>
+<li><span>&#9273;</span><em>2439</em></li>
+<li><span>&#9274;</span><em>243a</em></li>
+<li><span>&#9275;</span><em>243b</em></li>
+<li><span>&#9276;</span><em>243c</em></li>
+<li><span>&#9277;</span><em>243d</em></li>
+<li><span>&#9278;</span><em>243e</em></li>
+<li><span>&#9279;</span><em>243f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Khmer Symbols_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Khmer Symbols<mark>高棉符号</mark></h2>
+<p>共有<abbr>32</abbr>个区位</p>
+<ul	>
+<li><span>&#6624;</span><em>19e0</em></li>
+<li><span>&#6625;</span><em>19e1</em></li>
+<li><span>&#6626;</span><em>19e2</em></li>
+<li><span>&#6627;</span><em>19e3</em></li>
+<li><span>&#6628;</span><em>19e4</em></li>
+<li><span>&#6629;</span><em>19e5</em></li>
+<li><span>&#6630;</span><em>19e6</em></li>
+<li><span>&#6631;</span><em>19e7</em></li>
+<li><span>&#6632;</span><em>19e8</em></li>
+<li><span>&#6633;</span><em>19e9</em></li>
+<li><span>&#6634;</span><em>19ea</em></li>
+<li><span>&#6635;</span><em>19eb</em></li>
+<li><span>&#6636;</span><em>19ec</em></li>
+<li><span>&#6637;</span><em>19ed</em></li>
+<li><span>&#6638;</span><em>19ee</em></li>
+<li><span>&#6639;</span><em>19ef</em></li>	
+<li><span>&#6640;</span><em>19f0</em></li>
+<li><span>&#6641;</span><em>19f1</em></li>
+<li><span>&#6642;</span><em>19f2</em></li>
+<li><span>&#6643;</span><em>19f3</em></li>
+<li><span>&#6644;</span><em>19f4</em></li>
+<li><span>&#6645;</span><em>19f5</em></li>
+<li><span>&#6646;</span><em>19f6</em></li>
+<li><span>&#6647;</span><em>19f7</em></li>
+<li><span>&#6648;</span><em>19f8</em></li>
+<li><span>&#6649;</span><em>19f9</em></li>
+<li><span>&#6650;</span><em>19fa</em></li>
+<li><span>&#6651;</span><em>19fb</em></li>
+<li><span>&#6652;</span><em>19fc</em></li>
+<li><span>&#6653;</span><em>19fd</em></li>
+<li><span>&#6654;</span><em>19fe</em></li>
+<li><span>&#6655;</span><em>19ff</em></li>	
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

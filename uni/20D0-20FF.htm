@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Combining Diacritical Marks for Symbols_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Combining Diacritical Marks for Symbols<mark>符号用组合附加符号；混合区别标志；用于符号的组合用区分标志</mark></h2>
+<p>共有<abbr>48</abbr>个区位</p>
+<ul>
+<li><span>&#8400;</span><em>20d0</em></li>
+<li><span>&#8401;</span><em>20d1</em></li>
+<li><span>&#8402;</span><em>20d2</em></li>
+<li><span>&#8403;</span><em>20d3</em></li>
+<li><span>&#8404;</span><em>20d4</em></li>
+<li><span>&#8405;</span><em>20d5</em></li>
+<li><span>&#8406;</span><em>20d6</em></li>
+<li><span>&#8407;</span><em>20d7</em></li>
+<li><span>&#8408;</span><em>20d8</em></li>
+<li><span>&#8409;</span><em>20d9</em></li>
+<li><span>&#8410;</span><em>20da</em></li>
+<li><span>&#8411;</span><em>20db</em></li>
+<li><span>&#8412;</span><em>20dc</em></li>
+<li><span>&#8413;</span><em>20dd</em></li>
+<li><span>&#8414;</span><em>20de</em></li>
+<li><span>&#8415;</span><em>20df</em></li>
+<li><span>&#8416;</span><em>20e0</em></li>
+<li><span>&#8417;</span><em>20e1</em></li>
+<li><span>&#8418;</span><em>20e2</em></li>
+<li><span>&#8419;</span><em>20e3</em></li>
+<li><span>&#8420;</span><em>20e4</em></li>
+<li><span>&#8421;</span><em>20e5</em></li>
+<li><span>&#8422;</span><em>20e6</em></li>
+<li><span>&#8423;</span><em>20e7</em></li>
+<li><span>&#8424;</span><em>20e8</em></li>
+<li><span>&#8425;</span><em>20e9</em></li>
+<li><span>&#8426;</span><em>20ea</em></li>
+<li><span>&#8427;</span><em>20eb</em></li>
+<li><span>&#8428;</span><em>20ec</em></li>
+<li><span>&#8429;</span><em>20ed</em></li>
+<li><span>&#8430;</span><em>20ee</em></li>
+<li><span>&#8431;</span><em>20ef</em></li>
+<li><span>&#8432;</span><em>20f0</em></li>
+<li><span>&#8433;</span><em>20f1</em></li>
+<li><span>&#8434;</span><em>20f2</em></li>
+<li><span>&#8435;</span><em>20f3</em></li>
+<li><span>&#8436;</span><em>20f4</em></li>
+<li><span>&#8437;</span><em>20f5</em></li>
+<li><span>&#8438;</span><em>20f6</em></li>
+<li><span>&#8439;</span><em>20f7</em></li>
+<li><span>&#8440;</span><em>20f8</em></li>
+<li><span>&#8441;</span><em>20f9</em></li>
+<li><span>&#8442;</span><em>20fa</em></li>
+<li><span>&#8443;</span><em>20fb</em></li>
+<li><span>&#8444;</span><em>20fc</em></li>
+<li><span>&#8445;</span><em>20fd</em></li>
+<li><span>&#8446;</span><em>20fe</em></li>
+<li><span>&#8447;</span><em>20ff</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

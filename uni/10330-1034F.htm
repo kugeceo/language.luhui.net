@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gothic_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Gothic<mark>哥特文（歌德文）</mark></h2>
+<p>共有<abbr>32</abbr>个区位</p>
+<ul>
+<li><span>&#66352;</span><em>10330</em></li>
+<li><span>&#66353;</span><em>10331</em></li>
+<li><span>&#66354;</span><em>10332</em></li>
+<li><span>&#66355;</span><em>10333</em></li>
+<li><span>&#66356;</span><em>10334</em></li>
+<li><span>&#66357;</span><em>10335</em></li>
+<li><span>&#66358;</span><em>10336</em></li>
+<li><span>&#66359;</span><em>10337</em></li>
+<li><span>&#66360;</span><em>10338</em></li>
+<li><span>&#66361;</span><em>10339</em></li>
+<li><span>&#66362;</span><em>1033a</em></li>
+<li><span>&#66363;</span><em>1033b</em></li>
+<li><span>&#66364;</span><em>1033c</em></li>
+<li><span>&#66365;</span><em>1033d</em></li>
+<li><span>&#66366;</span><em>1033e</em></li>
+<li><span>&#66367;</span><em>1033f</em></li>
+<li><span>&#66368;</span><em>10340</em></li>
+<li><span>&#66369;</span><em>10341</em></li>
+<li><span>&#66370;</span><em>10342</em></li>
+<li><span>&#66371;</span><em>10343</em></li>
+<li><span>&#66372;</span><em>10344</em></li>
+<li><span>&#66373;</span><em>10345</em></li>
+<li><span>&#66374;</span><em>10346</em></li>
+<li><span>&#66375;</span><em>10347</em></li>
+<li><span>&#66376;</span><em>10348</em></li>
+<li><span>&#66377;</span><em>10349</em></li>
+<li><span>&#66378;</span><em>1034a</em></li>
+<li><span>&#66379;</span><em>1034b</em></li>
+<li><span>&#66380;</span><em>1034c</em></li>
+<li><span>&#66381;</span><em>1034d</em></li>
+<li><span>&#66382;</span><em>1034e</em></li>
+<li><span>&#66383;</span><em>1034f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

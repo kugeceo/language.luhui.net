@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Old Italic_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Old Italic<mark>旧斜体(古意大利文)</mark></h2>
+<p>共有<abbr>48</abbr>个区位</p>
+<ul>
+<li><span>&#66304;</span><em>10300</em></li>
+<li><span>&#66305;</span><em>10301</em></li>
+<li><span>&#66306;</span><em>10302</em></li>
+<li><span>&#66307;</span><em>10303</em></li>
+<li><span>&#66308;</span><em>10304</em></li>
+<li><span>&#66309;</span><em>10305</em></li>
+<li><span>&#66310;</span><em>10306</em></li>
+<li><span>&#66311;</span><em>10307</em></li>
+<li><span>&#66312;</span><em>10308</em></li>
+<li><span>&#66313;</span><em>10309</em></li>
+<li><span>&#66314;</span><em>1030a</em></li>
+<li><span>&#66315;</span><em>1030b</em></li>
+<li><span>&#66316;</span><em>1030c</em></li>
+<li><span>&#66317;</span><em>1030d</em></li>
+<li><span>&#66318;</span><em>1030e</em></li>
+<li><span>&#66319;</span><em>1030f</em></li>
+<li><span>&#66320;</span><em>10310</em></li>
+<li><span>&#66321;</span><em>10311</em></li>
+<li><span>&#66322;</span><em>10312</em></li>
+<li><span>&#66323;</span><em>10313</em></li>
+<li><span>&#66324;</span><em>10314</em></li>
+<li><span>&#66325;</span><em>10315</em></li>
+<li><span>&#66326;</span><em>10316</em></li>
+<li><span>&#66327;</span><em>10317</em></li>
+<li><span>&#66328;</span><em>10318</em></li>
+<li><span>&#66329;</span><em>10319</em></li>
+<li><span>&#66330;</span><em>1031a</em></li>
+<li><span>&#66331;</span><em>1031b</em></li>
+<li><span>&#66332;</span><em>1031c</em></li>
+<li><span>&#66333;</span><em>1031d</em></li>
+<li><span>&#66334;</span><em>1031e</em></li>
+<li><span>&#66335;</span><em>1031f</em></li>
+<li><span>&#66336;</span><em>10320</em></li>
+<li><span>&#66337;</span><em>10321</em></li>
+<li><span>&#66338;</span><em>10322</em></li>
+<li><span>&#66339;</span><em>10323</em></li>
+<li><span>&#66340;</span><em>10324</em></li>
+<li><span>&#66341;</span><em>10325</em></li>
+<li><span>&#66342;</span><em>10326</em></li>
+<li><span>&#66343;</span><em>10327</em></li>
+<li><span>&#66344;</span><em>10328</em></li>
+<li><span>&#66345;</span><em>10329</em></li>
+<li><span>&#66346;</span><em>1032a</em></li>
+<li><span>&#66347;</span><em>1032b</em></li>
+<li><span>&#66348;</span><em>1032c</em></li>
+<li><span>&#66349;</span><em>1032d</em></li>
+<li><span>&#66350;</span><em>1032e</em></li>
+<li><span>&#66351;</span><em>1032f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

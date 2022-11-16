@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Block Elements_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Block Elements<mark>方块元素</mark></h2>
+<p>共有<abbr>32</abbr>个区位</p>
+<ul>
+<li><span>&#9600;</span><em>2580</em></li>
+<li><span>&#9601;</span><em>2581</em></li>
+<li><span>&#9602;</span><em>2582</em></li>
+<li><span>&#9603;</span><em>2583</em></li>
+<li><span>&#9604;</span><em>2584</em></li>
+<li><span>&#9605;</span><em>2585</em></li>
+<li><span>&#9606;</span><em>2586</em></li>
+<li><span>&#9607;</span><em>2587</em></li>
+<li><span>&#9608;</span><em>2588</em></li>
+<li><span>&#9619;</span><em>2589</em></li>
+<li><span>&#9610;</span><em>258a</em></li>
+<li><span>&#9611;</span><em>258b</em></li>
+<li><span>&#9612;</span><em>258c</em></li>
+<li><span>&#9613;</span><em>258d</em></li>
+<li><span>&#9614;</span><em>258e</em></li>
+<li><span>&#9615;</span><em>258f</em></li>
+<li><span>&#9516;</span><em>2590</em></li>
+<li><span>&#9517;</span><em>2591</em></li>
+<li><span>&#9518;</span><em>2592</em></li>
+<li><span>&#9519;</span><em>2593</em></li>
+<li><span>&#9520;</span><em>2594</em></li>
+<li><span>&#9521;</span><em>2595</em></li>
+<li><span>&#9522;</span><em>2596</em></li>
+<li><span>&#9523;</span><em>2597</em></li>
+<li><span>&#9524;</span><em>2598</em></li>
+<li><span>&#9525;</span><em>2599</em></li>
+<li><span>&#9526;</span><em>259a</em></li>
+<li><span>&#9527;</span><em>259b</em></li>
+<li><span>&#9528;</span><em>259c</em></li>
+<li><span>&#9529;</span><em>259d</em></li>
+<li><span>&#9530;</span><em>259e</em></li>
+<li><span>&#9531;</span><em>259f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

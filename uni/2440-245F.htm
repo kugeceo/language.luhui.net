@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Optical Character Recognition_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Optical Character Recognition<mark>光学识别符号</mark></h2>
+<p>共有<abbr>32</abbr>个区位</p>
+<ul>
+<li><span>&#9280;</span><em>2440</em></li>
+<li><span>&#9281;</span><em>2441</em></li>
+<li><span>&#9282;</span><em>2442</em></li>
+<li><span>&#9283;</span><em>2443</em></li>
+<li><span>&#9284;</span><em>2444</em></li>
+<li><span>&#9285;</span><em>2445</em></li>
+<li><span>&#9286;</span><em>2446</em></li>
+<li><span>&#9287;</span><em>2447</em></li>
+<li><span>&#9288;</span><em>2448</em></li>
+<li><span>&#9289;</span><em>2449</em></li>
+<li><span>&#9290;</span><em>244a</em></li>
+<li><span>&#9291;</span><em>244b</em></li>
+<li><span>&#9292;</span><em>244c</em></li>
+<li><span>&#9293;</span><em>244d</em></li>
+<li><span>&#9294;</span><em>244e</em></li>
+<li><span>&#9295;</span><em>244f</em></li>
+<li><span>&#9296;</span><em>2450</em></li>
+<li><span>&#9297;</span><em>2451</em></li>
+<li><span>&#9298;</span><em>2452</em></li>
+<li><span>&#9299;</span><em>2453</em></li>
+<li><span>&#9300;</span><em>2454</em></li>
+<li><span>&#9301;</span><em>2455</em></li>
+<li><span>&#9302;</span><em>2456</em></li>
+<li><span>&#9303;</span><em>2457</em></li>
+<li><span>&#9304;</span><em>2458</em></li>
+<li><span>&#9305;</span><em>2459</em></li>
+<li><span>&#9306;</span><em>245a</em></li>
+<li><span>&#9307;</span><em>245b</em></li>
+<li><span>&#9308;</span><em>245c</em></li>
+<li><span>&#9309;</span><em>245d</em></li>
+<li><span>&#9310;</span><em>245e</em></li>
+<li><span>&#9311;</span><em>245f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

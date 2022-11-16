@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Supplemental Arrows-A_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Supplemental Arrows-A<mark>箭头符号补充-A</mark></h2>
+<p>共有<abbr>16</abbr>个区位</p>
+<ul>
+<li><span>&#10224;</span><em>27f0</em></li>
+<li><span>&#10225;</span><em>27f1</em></li>
+<li><span>&#10226;</span><em>27f2</em></li>
+<li><span>&#10227;</span><em>27f3</em></li>
+<li><span>&#10228;</span><em>27f4</em></li>
+<li><span>&#10229;</span><em>27f5</em></li>
+<li><span>&#10230;</span><em>27f6</em></li>
+<li><span>&#10231;</span><em>27f7</em></li>
+<li><span>&#10232;</span><em>27f8</em></li>
+<li><span>&#10233;</span><em>27f9</em></li>
+<li><span>&#10234;</span><em>27fa</em></li>
+<li><span>&#10235;</span><em>27fb</em></li>
+<li><span>&#10236;</span><em>27fc</em></li>
+<li><span>&#10237;</span><em>27fd</em></li>
+<li><span>&#10238;</span><em>27fe</em></li>
+<li><span>&#10239;</span><em>27ff</em></li>  
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

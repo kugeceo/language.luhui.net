@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tagalog_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Tagalog<mark>他加禄文-菲律宾已经成为加拿大移民最大的来源国，菲律宾的他加禄语(Tagalog)是增长最快的语言</mark></h2>
+<p>共有<abbr>32</abbr>个区位</p>
+<ul>
+<li><span>&#5888;</span><em>17a0</em></li>
+<li><span>&#5889;</span><em>17a1</em></li>
+<li><span>&#5890;</span><em>17a2</em></li>
+<li><span>&#5891;</span><em>17a3</em></li>
+<li><span>&#5892;</span><em>17a4</em></li>
+<li><span>&#5893;</span><em>17a5</em></li>
+<li><span>&#5894;</span><em>17a6</em></li>
+<li><span>&#5895;</span><em>17a7</em></li>
+<li><span>&#5896;</span><em>1a8</em></li>
+<li><span>&#5897;</span><em>17a9</em></li>
+<li><span>&#5898;</span><em>17aa</em></li>
+<li><span>&#5899;</span><em>17ab</em></li>
+<li><span>&#5900;</span><em>17ac</em></li>
+<li><span>&#5901;</span><em>17ad</em></li>
+<li><span>&#5902;</span><em>17ae</em></li>
+<li><span>&#5903;</span><em>17af</em></li>
+<li><span>&#5904;</span><em>1710</em></li>
+<li><span>&#5905;</span><em>1711</em></li>
+<li><span>&#5906;</span><em>1712</em></li>
+<li><span>&#5907;</span><em>1713</em></li>
+<li><span>&#5908;</span><em>1714</em></li>
+<li><span>&#5909;</span><em>1715</em></li>
+<li><span>&#5910;</span><em>1716</em></li>
+<li><span>&#5911;</span><em>1717</em></li>
+<li><span>&#5912;</span><em>1718</em></li>
+<li><span>&#5913;</span><em>1719</em></li>
+<li><span>&#5914;</span><em>171a</em></li>
+<li><span>&#5915;</span><em>171b</em></li>
+<li><span>&#5916;</span><em>171c</em></li>
+<li><span>&#5917;</span><em>171d</em></li>
+<li><span>&#5918;</span><em>171e</em></li>
+<li><span>&#5919;</span><em>171f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

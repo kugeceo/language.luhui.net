@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Katakana Phonetic Extensions_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+ <h2>Katakana Phonetic Extensions<mark>日文片假名语音扩展</mark></h2>
+ <p>共有<abbr>16</abbr>个区位</p>
+<ul>
+<li><span>&#12784;</span><em>31f0</em></li>
+<li><span>&#12785;</span><em>31f1</em></li>
+<li><span>&#12786;</span><em>31f2</em></li>
+<li><span>&#12787;</span><em>31f3</em></li>
+<li><span>&#12788;</span><em>31f4</em></li>
+<li><span>&#12789;</span><em>31f5</em></li>
+<li><span>&#12790;</span><em>31f6</em></li>
+<li><span>&#12791;</span><em>31f7</em></li>
+<li><span>&#12792;</span><em>31f8</em></li>
+<li><span>&#12793;</span><em>31f9</em></li> 
+<li><span>&#12794;</span><em>31fa</em></li>
+<li><span>&#12795;</span><em>31fb</em></li>
+<li><span>&#12796;</span><em>31fc</em></li>
+<li><span>&#12797;</span><em>31fd</em></li>
+<li><span>&#12798;</span><em>31fe</em></li>
+<li><span>&#12799;</span><em>31ff</em></li>	    
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

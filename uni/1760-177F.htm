@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tagbanwa_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Tagbanwa<mark>泰格班瓦文</mark></h2>
+<p>共有<abbr>32</abbr>个区位</p>
+<ul	>
+<li><span>&#5984;</span><em>1760</em></li>
+<li><span>&#5985;</span><em>1761</em></li>
+<li><span>&#5986;</span><em>1762</em></li>
+<li><span>&#5987;</span><em>1763</em></li>
+<li><span>&#5988;</span><em>1764</em></li>
+<li><span>&#5989;</span><em>1765</em></li>
+<li><span>&#5990;</span><em>1766</em></li>
+<li><span>&#5991;</span><em>1767</em></li>
+<li><span>&#5992;</span><em>1768</em></li>
+<li><span>&#5993;</span><em>1769</em></li>
+<li><span>&#5994;</span><em>176a</em></li>
+<li><span>&#5995;</span><em>176b</em></li>
+<li><span>&#5996;</span><em>176c</em></li>
+<li><span>&#5997;</span><em>176d</em></li>
+<li><span>&#5998;</span><em>176e</em></li>
+<li><span>&#5999;</span><em>176f</em></li>
+<li><span>&#6000;</span><em>1770</em></li>
+<li><span>&#6001;</span><em>1771</em></li>
+<li><span>&#6002;</span><em>1772</em></li>
+<li><span>&#6003;</span><em>1773</em></li>
+<li><span>&#6004;</span><em>1774</em></li>
+<li><span>&#6005;</span><em>1775</em></li>
+<li><span>&#6006;</span><em>1776</em></li>
+<li><span>&#6007;</span><em>1777</em></li>
+<li><span>&#6008;</span><em>1778</em></li>
+<li><span>&#6009;</span><em>1779</em></li>
+<li><span>&#6010;</span><em>177a</em></li>
+<li><span>&#6011;</span><em>177b</em></li>
+<li><span>&#6012;</span><em>177c</em></li>
+<li><span>&#6013;</span><em>177d</em></li>
+<li><span>&#6014;</span><em>177e</em></li>
+<li><span>&#6015;</span><em>177f</em></li>		
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

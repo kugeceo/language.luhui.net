@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aegean Numbers_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Aegean Numbers<mark>爱琴海数字</mark></h2>
+<p>共有<abbr>64</abbr>个区位</p>
+<ul>
+<li><span>&#65792;</span><em>10100</em></li>
+<li><span>&#65793;</span><em>10101</em></li>
+<li><span>&#65794;</span><em>10102</em></li>
+<li><span>&#65795;</span><em>10103</em></li>
+<li><span>&#65796;</span><em>10104</em></li>
+<li><span>&#65797;</span><em>10105</em></li>
+<li><span>&#65798;</span><em>10106</em></li>
+<li><span>&#65799;</span><em>10107</em></li>
+<li><span>&#65800;</span><em>10108</em></li>
+<li><span>&#65801;</span><em>10109</em></li>
+<li><span>&#65802;</span><em>1010a</em></li>
+<li><span>&#65803;</span><em>1010b</em></li>
+<li><span>&#65804;</span><em>1010c</em></li>
+<li><span>&#65805;</span><em>1010d</em></li>
+<li><span>&#65806;</span><em>1010e</em></li>
+<li><span>&#65807;</span><em>1010f</em></li>
+<li><span>&#65808;</span><em>10110</em></li>
+<li><span>&#65809;</span><em>10111</em></li>
+<li><span>&#65810;</span><em>10112</em></li>
+<li><span>&#65811;</span><em>10113</em></li>
+<li><span>&#65812;</span><em>10114</em></li>
+<li><span>&#65813;</span><em>10115</em></li>
+<li><span>&#65814;</span><em>10116</em></li>
+<li><span>&#65815;</span><em>10117</em></li>
+<li><span>&#65816;</span><em>10118</em></li>
+<li><span>&#65817;</span><em>10119</em></li>
+<li><span>&#65818;</span><em>1011a</em></li>
+<li><span>&#65819;</span><em>1011b</em></li>
+<li><span>&#65820;</span><em>1011c</em></li>
+<li><span>&#65821;</span><em>1011d</em></li>
+<li><span>&#65822;</span><em>1011e</em></li>
+<li><span>&#65823;</span><em>1011f</em></li>
+<li><span>&#65824;</span><em>10120</em></li>
+<li><span>&#65825;</span><em>10121</em></li>
+<li><span>&#65826;</span><em>10122</em></li>
+<li><span>&#65827;</span><em>10123</em></li>
+<li><span>&#65828;</span><em>10124</em></li>
+<li><span>&#65829;</span><em>10125</em></li>
+<li><span>&#65830;</span><em>10126</em></li>
+<li><span>&#65831;</span><em>10127</em></li>
+<li><span>&#65832;</span><em>10128</em></li>
+<li><span>&#65833;</span><em>10129</em></li>
+<li><span>&#65834;</span><em>1012a</em></li>
+<li><span>&#65835;</span><em>1012b</em></li>
+<li><span>&#65836;</span><em>1012c</em></li>
+<li><span>&#65837;</span><em>1012d</em></li>
+<li><span>&#65838;</span><em>1012e</em></li>
+<li><span>&#65839;</span><em>1012f</em></li>
+<li><span>&#65840;</span><em>10130</em></li>
+<li><span>&#65841;</span><em>10131</em></li>
+<li><span>&#65842;</span><em>10132</em></li>
+<li><span>&#65843;</span><em>10133</em></li>
+<li><span>&#65844;</span><em>10134</em></li>
+<li><span>&#65845;</span><em>10135</em></li>
+<li><span>&#65846;</span><em>10136</em></li>
+<li><span>&#65847;</span><em>10137</em></li>
+<li><span>&#65848;</span><em>10138</em></li>
+<li><span>&#65849;</span><em>10139</em></li>
+<li><span>&#65850;</span><em>1013a</em></li>
+<li><span>&#65851;</span><em>1013b</em></li>
+<li><span>&#65852;</span><em>1013c</em></li>
+<li><span>&#65853;</span><em>1013d</em></li>
+<li><span>&#65854;</span><em>1013e</em></li>
+<li><span>&#65855;</span><em>1013f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

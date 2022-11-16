@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ogham_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Ogham<mark>欧甘字母表（古英国和爱尔兰字母表，有 20 个字母）</mark></h2>
+<p>共有<abbr>32</abbr>个区位</p>
+<ul>
+<li><span>&#5760;</span><em>1680</em></li>
+<li><span>&#5761;</span><em>1681</em></li>
+<li><span>&#5762;</span><em>1682</em></li>
+<li><span>&#5763;</span><em>1683</em></li>
+<li><span>&#5764;</span><em>1684</em></li>
+<li><span>&#5765;</span><em>1685</em></li>
+<li><span>&#5766;</span><em>1686</em></li>
+<li><span>&#5767;</span><em>1687</em></li>
+<li><span>&#5768;</span><em>1688</em></li>
+<li><span>&#5769;</span><em>1689</em></li>
+<li><span>&#5770;</span><em>168a</em></li>
+<li><span>&#5771;</span><em>168b</em></li>
+<li><span>&#5772;</span><em>168c</em></li>
+<li><span>&#5773;</span><em>168d</em></li>
+<li><span>&#5774;</span><em>168e</em></li>
+<li><span>&#5775;</span><em>168f</em></li>
+<li><span>&#5776;</span><em>1690</em></li>
+<li><span>&#5777;</span><em>1691</em></li>
+<li><span>&#5778;</span><em>1692</em></li>
+<li><span>&#5779;</span><em>1693</em></li>
+<li><span>&#5780;</span><em>1694</em></li>
+<li><span>&#5781;</span><em>1695</em></li>
+<li><span>&#5782;</span><em>1696</em></li>
+<li><span>&#5783;</span><em>1697</em></li>
+<li><span>&#5784;</span><em>1698</em></li>
+<li><span>&#5785;</span><em>1699</em></li>
+<li><span>&#5786;</span><em>169a</em></li>
+<li><span>&#5787;</span><em>169b</em></li>
+<li><span>&#5788;</span><em>169c</em></li>
+<li><span>&#5789;</span><em>169d</em></li>
+<li><span>&#5790;</span><em>169e</em></li>
+<li><span>&#5791;</span><em>169f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

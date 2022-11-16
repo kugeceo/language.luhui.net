@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cyrillic Supplementary_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Cyrillic Supplementary<mark>希里尔文扩充</mark></h2>
+<p>共有<abbr>48</abbr>个区位</p>
+<ul>
+<li><span>&#1280;</span><em>0500</em></li>
+<li><span>&#1281;</span><em>0501</em></li>
+<li><span>&#1282;</span><em>0502</em></li>
+<li><span>&#1283;</span><em>0503</em></li>
+<li><span>&#1284;</span><em>0504</em></li>
+<li><span>&#1285;</span><em>0505</em></li>
+<li><span>&#1286;</span><em>0506</em></li>
+<li><span>&#1287;</span><em>0507</em></li>
+<li><span>&#1288;</span><em>0508</em></li>
+<li><span>&#1289;</span><em>0509</em></li>
+<li><span>&#1290;</span><em>050a</em></li>
+<li><span>&#1291;</span><em>050b</em></li>
+<li><span>&#1292;</span><em>050c</em></li>
+<li><span>&#1293;</span><em>050d</em></li>
+<li><span>&#1294;</span><em>050e</em></li>
+<li><span>&#1295;</span><em>050f</em></li>
+<li><span>&#1296;</span><em>0510</em></li>
+<li><span>&#1297;</span><em>0511</em></li>
+<li><span>&#1298;</span><em>0512</em></li>
+<li><span>&#1299;</span><em>0513</em></li>
+<li><span>&#1300;</span><em>0514</em></li>
+<li><span>&#1301;</span><em>0515</em></li>
+<li><span>&#1302;</span><em>0516</em></li>
+<li><span>&#1303;</span><em>0517</em></li>
+<li><span>&#1304;</span><em>0518</em></li>
+<li><span>&#1305;</span><em>0519</em></li>
+<li><span>&#1306;</span><em>051a</em></li>
+<li><span>&#1307;</span><em>051b</em></li>
+<li><span>&#1308;</span><em>051c</em></li>
+<li><span>&#1309;</span><em>051d</em></li>
+<li><span>&#1310;</span><em>051e</em></li>
+<li><span>&#1311;</span><em>051f</em></li>
+<li><span>&#1312;</span><em>0520</em></li>
+<li><span>&#1313;</span><em>0521</em></li>
+<li><span>&#1314;</span><em>0522</em></li>
+<li><span>&#1315;</span><em>0523</em></li>
+<li><span>&#1316;</span><em>0524</em></li>
+<li><span>&#1317;</span><em>0525</em></li>
+<li><span>&#1318;</span><em>0526</em></li>
+<li><span>&#1319;</span><em>0527</em></li>
+<li><span>&#1320;</span><em>0528</em></li>
+<li><span>&#1321;</span><em>0529</em></li>
+<li><span>&#1322;</span><em>052a</em></li>
+<li><span>&#1323;</span><em>052b</em></li>
+<li><span>&#1324;</span><em>052c</em></li>
+<li><span>&#1325;</span><em>052d</em></li>
+<li><span>&#1326;</span><em>0528</em></li>
+<li><span>&#1327;</span><em>052f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

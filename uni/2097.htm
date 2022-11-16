@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>unicode,ansi,utf-8,unicode big endian编码的区别(随便说说字符集和编码 )_字体网</title>
+<meta name="Keywords" content="字符集,说说,随便,区别,编码" />
+<meta name="Description" content="unicode,ansi,utf-8,unicode big endian编码的区别(随便说说字符集和编码 )">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="zico.min.css" rel="stylesheet"/>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="jquery.min.js" ></script>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<link href="/Template/Font/style/style.css?Version=20200613" rel="stylesheet"/>
+<script src="ICMS/ZL_Common.js"></script>
+</head>
+<body class="con_Body">
+<header class="bm_Header con_Header">
+<nav class="navbar navbar-expand-md fixed-top navbar-dark home_nav">
+<a class="navbar-brand" href="/"><img src="/Template/Font/style/images/logo_n.svg" alt="字体网"></a>
+  <button class="navbar-toggler" type="button"  id="menu-toggle" data-toggle="collapse" data-target="#navbarsExample04s" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+<div class="collapse navbar-collapse " id="navbarsExample04">
+    <ul class="navbar-nav ml-auto bm_Header_p">
+	  <li class="nav-item"> <a class="nav-link" href="/">首页</a></li>
+      <li class="nav-item"> <a class="nav-link" href="/Class_1/Default">字体资讯</a></li>
+        <li class="nav-item"> <a class="nav-link" href="/Class_5/Default">字库中心</a></li>
+        <li class="nav-item active"> <a class="nav-link " href="/Class_11/Default">字体学院</a></li>
+		<li class="nav-item "> <a class="nav-link" href="/Class_61/Default">编码知识</a></li>
+        <li class="nav-item"> <a class="nav-link " href="//f.ziti163.com/" target="_blank">逐浪字库</a></li>
+		<li class="nav-item"> <a class="nav-link" href="/Class_29/Default">字体墙</a></li>
+        <li class="nav-item"> <a class="nav-link " href="http://v.ziti163.com" target="_blank">在线做字</a></li>
+		<li class="nav-item"> <a class="nav-link" href="/Class_54/Default">WebFont</a></li>
+        <li class="nav-item"> <a class="nav-link "  href="http://www.sjtzj.com" target="_blank">瘦金体</a></li>
+	    <li class="nav-item"> <a class="nav-link "  href="javascript:;" onclick="isSearch();"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+  </ul>
+<ul class="navbar-nav home_search hidden-xs" style="opacity: 0; z-index: -1; right: .5rem; top: .7rem;">
+<form action="/Search/SearchList" target="_blank">
+<i class="fa fa-search"></i>
+<input type="text" class="form-control" placeholder="输入关键字，回车查询" name="keyword">
+<a onclick="isClose();" href="javascript:;"><i class="fa fa-close"></i></a>
+</form>
+</ul>
+</div>
+</nav>
+</header>
+<!--header end-->
+
+<div id="wrapper">
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+		<li class="bm_Wrapper_close"><a href="javascript:void(0)"><i class="fa fa-close" aria-hidden="true"></i></a></li>
+		<li> <a href="/">首页</a></li>
+        <li><a href="/Class_1/Default">资讯中心</a></li>
+        <li><a href="/Class_5/Default">字库中心</a></li>
+        <li><a href="/Class_11/Default">字体学院</a></li>
+		<li class="active"> <a href="/Class_61/Default">编码知识</a></li>
+        <li><a href="//f.ziti163.com/" target="_blank">逐浪字库</a></li>
+		<li><a href="/Class_29/Default">字体墙</a></li>
+        <li><a href="http://v.ziti163.com" target="_blank">在线做字</a></li>
+		<li><a href="/Class_54/Default">WebFont</a></li>
+        <li><a  href="http://www.sjtzj.com" target="_blank">瘦金体</a></li>
+		</ul>
+	</div>
+</div>
+<!--侧边导航-->
+<main class="container con_Main">
+<div class="row">
+<div class="col-md-9 con_Main_left">
+<div class="con_Main_t"><strong>unicode,ansi,utf-8,unicode big endian编码的区别(随便说说字符集和编码 )</strong>
+<span><a href="/Class_61/Default">所属栏目：编码知识</a> </span> <small>18年03月27日</small> <abbr>标签：<label> 字符集,说说,随便,区别,编码 </label></abbr>
+<div class="abbr_share"><i class="fa fa-eye" aria-hidden="true"></i> <SCRIPT language=javascript src="/Common/GetHits?id=2097"></SCRIPT>
+<a href="javascript:;" id="copybtn" class="opition" title="复制分享链接"><i class="fa fa-share-alt" aria-hidden="true"></i></a> 
+<a href="[ERR:(GetInfoUrl)标签缺少参数]"><i class="fa fa-chevron-left"></i></a>
+<a href="/Item/2029"><i class="fa fa-chevron-right"></i></a>
+
+</div>
+
+</div>
+<div class="con_Main_c">
+<p><br/></p><p style="text-align: left;">快下班时，爱问问题的小朋友Nico又问了一个问题：&nbsp;</p><p style="text-align: left;">&quot;sqlserver里面有char和nchar，那个n据说是指unicode的数据，这个是什么意思。&quot;&nbsp;</p><p style="text-align: left;">并不是所有简单的问题都很容易回答，就像这个问题一样。于是我答应专门写一篇BLOG来从头讲讲编码的故事。那么就让我们找个草堆坐下，先抽口烟，看看夜晚天空上的银河，然后想一想要从哪里开始讲起。嗯，也许这样开始比较好……&nbsp;</p><p><br/></p><p style="text-align: left;">很久很久以前，有一群人，他们决定用8个可以开合的晶体管来组合成不同的状态，以表示世界上的万物。他们看到8个开关状态是好的，于是他们把这称为&quot;字节&quot;。&nbsp;</p><p style="text-align: left;">再后来，他们又做了一些可以处理这些字节的机器，机器开动了，可以用字节来组合出很多状态，状态开始变来变去。他们看到这样是好的，于是它们就这机器称为&quot;计算机&quot;。&nbsp;</p><p><br/></p><p style="text-align: left;">开始计算机只在美国用。八位的字节一共可以组合出256(2的8次方)种不同的状态。&nbsp;</p><p style="text-align: left;">他们把其中的编号从0开始的32种状态分别规定了特殊的用途，一但终端、打印机遇上约定好的这些字节被传过来时，就要做一些约定的动作。遇上00x10, 终端就换行，遇上0x07, 终端就向人们嘟嘟叫，例好遇上0x1b, 打印机就打印反白的字，或者终端就用彩色显示字母。他们看到这样很好，于是就把这些0x20以下的字节状态称为&quot;控制码&quot;。&nbsp;</p><p style="text-align: left;">他们又把所有的空格、标点符号、数字、大小写字母分别用连续的字节状态表示，一直编到了第127号，这样计算机就可以用不同字节来存储英语的文字了。大家看到这样，都感觉很好，于是大家都把这个方案叫做 ANSI 的&quot;Ascii&quot;编码（American Standard Code for Information Interchange，美国信息互换标准代码）。当时世界上所有的计算机都用同样的ASCII方案来保存英文文字。&nbsp;</p><p style="text-align: left;">后来，就像建造巴比伦塔一样，世界各地的都开始使用计算机，但是很多国家用的不是英文，他们的字母里有许多是ASCII里没有的，为了可以在计算机保存他们的文字，他们决定采用127号之后的空位来表示这些新的字母、符号，还加入了很多画表格时需要用下到的横线、竖线、交叉等形状，一直把序号编到了最后一个状态255。从128到255这一页的字符集被称&quot;扩展字符集&quot;。从此之后，贪婪的人类再没有新的状态可以用了，美帝国主义可能没有想到还有第三世界国家的人们也希望可以用到计算机吧！&nbsp;</p><p style="text-align: left;">等中国人们得到计算机时，已经没有可以利用的字节状态来表示汉字，况且有6000多个常用汉字需要保存呢。但是这难不倒智慧的中国人民，我们不客气地把那些127号之后的奇异符号们直接取消掉, 规定：一个小于127的字符的意义与原来相同，但两个大于127的字符连在一起时，就表示一个汉字，前面的一个字节（他称之为高字节）从0xA1用到0xF7，后面一个字节（低字节）从0xA1到0xFE，这样我们就可以组合出大约7000多个简体汉字了。在这些编码里，我们还把数学符号、罗马希腊的字母、日文的假名们都编进去了，连在 ASCII 里本来就有的数字、标点、字母都统统重新编了两个字节长的编码，这就是常说的&quot;全角&quot;字符，而原来在127号以下的那些就叫&quot;半角&quot;字符了。&nbsp;</p><p style="text-align: left;">中国人民看到这样很不错，于是就把这种汉字方案叫做 &quot;GB2312&quot;。GB2312 是对 ASCII 的中文扩展。&nbsp;</p><p style="text-align: left;">但是中国的汉字太多了，我们很快就就发现有许多人的人名没有办法在这里打出来，特别是某些很会麻烦别人的国家领导人。于是我们不得不继续把 GB2312 没有用到的码位找出来老实不客气地用上。&nbsp;</p><p style="text-align: left;">后来还是不够用，于是干脆不再要求低字节一定是127号之后的内码，只要第一个字节是大于127就固定表示这是一个汉字的开始，不管后面跟的是不是扩展字符集里的内容。结果扩展之后的编码方案被称为 GBK 标准，GBK 包括了 GB2312 的所有内容，同时又增加了近20000个新的汉字（包括繁体字）和符号。&nbsp;</p><p style="text-align: left;">后来少数民族也要用电脑了，于是我们再扩展，又加了几千个新的少数民族的字，GBK 扩成了 GB18030。从此之后，中华民族的文化就可以在计算机时代中传承了。&nbsp;</p><p style="text-align: left;">中国的程序员们看到这一系列汉字编码的标准是好的，于是通称他们叫做 &quot;DBCS&quot;（Double Byte Charecter Set 双字节字符集）。在DBCS系列标准里，最大的特点是两字节长的汉字字符和一字节长的英文字符并存于同一套编码方案里，因此他们写的程序为了支持中文处理，必须要注意字串里的每一个字节的值，如果这个值是大于127的，那么就认为一个双字节字符集里的字符出现了。那时候凡是受过加持，会编程的计算机僧侣们都要每天念下面这个咒语数百遍：&nbsp;</p><p style="text-align: left;">&quot;一个汉字算两个英文字符！一个汉字算两个英文字符……&quot;&nbsp;</p><p><br/></p><p style="text-align: left;">因为当时各个国家都像中国这样搞出一套自己的编码标准，结果互相之间谁也不懂谁的编码，谁也不支持别人的编码，连大陆和台湾这样只相隔了150海里，使用着同一种语言的兄弟地区，也分别采用了不同的 DBCS 编码方案——当时的中国人想让电脑显示汉字，就必须装上一个&quot;汉字系统&quot;，专门用来处理汉字的显示、输入的问题，但是那个台湾的愚昧封建人士写的算命程序就必须加装另一套支持 BIG5 编码的什么&quot;倚天汉字系统&quot;才可以用，装错了字符系统，显示就会乱了套！这怎么办？而且世界民族之林中还有那些一时用不上电脑的穷苦人民，他们的文字又怎么办？&nbsp;</p><p style="text-align: left;">真是计算机的巴比伦塔命题啊！&nbsp;</p><p style="text-align: left;">正在这时，大天使加百列及时出现了——一个叫 ISO （国际标谁化组织）的国际组织决定着手解决这个问题。他们采用的方法很简单：废了所有的地区性编码方案，重新搞一个包括了地球上所有文化、所有字母和符号的编码！他们打算叫它&quot;Universal Multiple-Octet Coded Character Set&quot;，简称 UCS, 俗称 &quot;UNICODE&quot;。&nbsp;</p><p style="text-align: left;">UNICODE 开始制订时，计算机的存储器容量极大地发展了，空间再也不成为问题了。于是 ISO 就直接规定必须用两个字节，也就是16位来统一表示所有的字符，对于ascii里的那些“半角”字符，UNICODE 包持其原编码不变，只是将其长度由原来的8位扩展为16位，而其他文化和语言的字符则全部重新统一编码。由于&quot;半角&quot;英文符号只需要用到低8位，所以其高8位永远是0，因此这种大气的方案在保存英文文本时会多浪费一倍的空间。&nbsp;</p><p style="text-align: left;">这时候，从旧社会里走过来的程序员开始发现一个奇怪的现象：他们的strlen函数靠不住了，一个汉字不再是相当于两个字符了，而是一个！是的，从 UNICODE 开始，无论是半角的英文字母，还是全角的汉字，它们都是统一的&quot;一个字符&quot;！同时，也都是统一的&quot;两个字节&quot;，请注意&quot;字符&quot;和&quot;字节&quot;两个术语的不同，“字节”是一个8位的物理存贮单元，而“字符”则是一个文化相关的符号。在UNICODE 中，一个字符就是两个字节。一个汉字算两个英文字符的时代已经快过去了。&nbsp;</p><p style="text-align: left;">从前多种字符集存在时，那些做多语言软件的公司遇上过很大麻烦，他们为了在不同的国家销售同一套软件，就不得不在区域化软件时也加持那个双字节字符集咒语，不仅要处处小心不要搞错，还要把软件中的文字在不同的字符集中转来转去。UNICODE 对于他们来说是一个很好的一揽子解决方案，于是从 Windows NT 开始，MS 趁机把它们的操作系统改了一遍，把所有的核心代码都改成了用 UNICODE 方式工作的版本，从这时开始，WINDOWS 系统终于无需要加装各种本土语言系统，就可以显示全世界上所有文化的字符了。&nbsp;</p><p style="text-align: left;">但是，UNICODE 在制订时没有考虑与任何一种现有的编码方案保持兼容，这使得 GBK 与UNICODE 在汉字的内码编排上完全是不一样的，没有一种简单的算术方法可以把文本内容从UNICODE编码和另一种编码进行转换，这种转换必须通过查表来进行。&nbsp;</p><p style="text-align: left;">如前所述，UNICODE 是用两个字节来表示为一个字符，他总共可以组合出65535不同的字符，这大概已经可以覆盖世界上所有文化的符号。如果还不够也没有关系，ISO已经准备了UCS-4方案，说简单了就是四个字节来表示一个字符，这样我们就可以组合出21亿个不同的字符出来（最高位有其他用途），这大概可以用到银河联邦成立那一天吧！&nbsp;</p><p><br/></p><p style="text-align: left;">UNICODE 来到时，一起到来的还有计算机网络的兴起，UNICODE 如何在网络上传输也是一个必须考虑的问题，于是面向传输的众多 UTF（UCS Transfer Format）标准出现了，顾名思义，UTF8就是每次8个位传输数据，而UTF16就是每次16个位，只不过为了传输时的可靠性，从UNICODE到UTF时并不是直接的对应，而是要过一些算法和规则来转换。&nbsp;</p><p style="text-align: left;">受到过网络编程加持的计算机僧侣们都知道，在网络里传递信息时有一个很重要的问题，就是对于数据高低位的解读方式，一些计算机是采用低位先发送的方法，例如我们PC机采用的 INTEL 架构，而另一些是采用高位先发送的方式，在网络中交换数据时，为了核对双方对于高低位的认识是否是一致的，采用了一种很简便的方法，就是在文本流的开始时向对方发送一个标志符——如果之后的文本是高位在位，那就发送&quot;FEFF&quot;，反之，则发送&quot;FFFE&quot;。不信你可以用二进制方式打开一个UTF-X格式的文件，看看开头两个字节是不是这两个字节？&nbsp;</p><p><br/></p><p style="text-align: left;">讲到这里，我们再顺便说说一个很著名的奇怪现象：当你在 windows 的记事本里新建一个文件，输入&quot;联通&quot;两个字之后，保存，关闭，然后再次打开，你会发现这两个字已经消失了，代之的是几个乱码！呵呵，有人说这就是联通之所以拼不过移动的原因。&nbsp;</p><p style="text-align: left;">其实这是因为GB2312编码与UTF8编码产生了编码冲撞的原因。&nbsp;</p><p style="text-align: left;">从网上引来一段从UNICODE到UTF8的转换规则：&nbsp;</p><p><br/></p><p style="text-align: left;">Unicode&nbsp;</p><p style="text-align: left;">UTF-8&nbsp;</p><p><br/></p><p style="text-align: left;">0000 - 007F&nbsp;</p><p style="text-align: left;">0xxxxxxx&nbsp;</p><p><br/></p><p style="text-align: left;">0080 - 07FF&nbsp;</p><p style="text-align: left;">110xxxxx 10xxxxxx&nbsp;</p><p><br/></p><p style="text-align: left;">0800 - FFFF&nbsp;</p><p style="text-align: left;">1110xxxx 10xxxxxx 10xxxxxx&nbsp;</p><p><br/></p><p style="text-align: left;">例如&quot;汉&quot;字的Unicode编码是6C49。6C49在0800-FFFF之间，所以要用3字节模板：1110xxxx 10xxxxxx 10xxxxxx。将6C49写成二进制是：0110 1100 0100 1001，将这个比特流按三字节模板的分段方法分为0110 110001 001001，依次代替模板中的x，得到：1110-0110 10-110001 10-001001，即E6 B1 89，这就是其UTF8的编码。&nbsp;</p><p style="text-align: left;">而当你新建一个文本文件时，记事本的编码默认是ANSI, 如果你在ANSI的编码输入汉字，那么他实际就是GB系列的编码方式，在这种编码下，&quot;联通&quot;的内码是：&nbsp;</p><p style="text-align: left;">c1 1100 0001&nbsp;</p><p style="text-align: left;">aa 1010 1010&nbsp;</p><p style="text-align: left;">cd 1100 1101&nbsp;</p><p style="text-align: left;">a8 1010 1000&nbsp;</p><p style="text-align: left;">注意到了吗？第一二个字节、第三四个字节的起始部分的都是&quot;110&quot;和&quot;10&quot;，正好与UTF8规则里的两字节模板是一致的，于是再次打开记事本时，记事本就误认为这是一个UTF8编码的文件，让我们把第一个字节的110和第二个字节的10去掉，我们就得到了&quot;00001 101010&quot;，再把各位对齐，补上前导的0，就得到了&quot;0000 0000 0110 1010&quot;，不好意思，这是UNICODE的006A，也就是小写的字母&quot;j&quot;，而之后的两字节用UTF8解码之后是0368，这个字符什么也不是。这就是只有&quot;联通&quot;两个字的文件没有办法在记事本里正常显示的原因。&nbsp;</p><p style="text-align: left;">而如果你在&quot;联通&quot;之后多输入几个字，其他的字的编码不见得又恰好是110和10开始的字节，这样再次打开时，记事本就不会坚持这是一个utf8编码的文件，而会用ANSI的方式解读之，这时乱码又不出现了。&nbsp;</p><p><br/></p><p style="text-align: left;">好了，终于可以回答NICO的问题了，在数据库里，有n前缀的字串类型就是UNICODE类型，这种类型中，固定用两个字节来表示一个字符，无论这个字符是汉字还是英文字母，或是别的什么。&nbsp;</p><p style="text-align: left;">如果你要测试&quot;abc汉字&quot;这个串的长度，在没有n前缀的数据类型里，这个字串是7个字符的长度，因为一个汉字相当于两个字符。而在有n前缀的数据类型里，同样的测试串长度的函数将会告诉你是5个字符，因为一个汉字就是一个字符。&nbsp;</p><p><br/></p>
+</div>
+</div>
+
+<div class="col-md-3 con_Main_right">
+<div class="con_Main_u">
+<div class="con_Main_u_t">
+<a href="/Class_29/NodePage?n="><img src="" alt="" onerror="this.onerror=null;this.src='/UploadFiles/nopic.svg'"></a><span></span> </div> 
+<ul>
+<li><label><i class="fa z01-icon089"></i> </label></li>
+<li><label><i class="fa fa-check"></i> 累计发文：125</label></li>
+</ul>
+<div class="clearfix"></div>
+<div class="con_Main_qm"><span>个性签名：</span>
+<p></p>
+</div>
+<div class="con_Main_qm"><span>最新创作：</span>
+<ul>
+
+<li><a href="/Item/2985" title="注意！严格清理违背汉字书写规律、审美品位的字体"  data-hover="注意！严格清理违背汉字书写规律、审美品位的字体">注意！严格清理违背汉字书写规律、审美品位的字体</a></li><li><a href="/Item/2981" title="逐浪字库，主题更酷--逐浪高端主题全面上架华为主题市场"  data-hover="逐浪字库，主题更酷--逐浪高端主题全面上架华为主题市场">逐浪字库，主题更酷--逐浪高端主题全面上架华为主题市场</a></li><li><a href="/Item/2980" title="z01.cn逐浪字库官方平台全面升级"  data-hover="z01.cn逐浪字库官方平台全面升级">z01.cn逐浪字库官方平台全面升级</a></li><li><a href="/Item/2974" title="【中国语言文字】同济大学：汉字本源润乡土，经典文化助振兴"  data-hover="【中国语言文字】同济大学：汉字本源润乡土，经典文化助振兴">【中国语言文字】同济大学：汉字本源润乡土，经典文化助振兴</a></li><li><a href="/Item/2973" title="苹果Apple Watch上线首个中文汉字表盘"  data-hover="苹果Apple Watch上线首个中文汉字表盘">苹果Apple Watch上线首个中文汉字表盘</a></li>
+</ul>
+<a href="/Class_29/NodePage?n=" class="btn btn-info btn-sm">+进入作者主页</a>
+</div>
+
+</div><!--main_u end-->
+<div class="con_main_hot">
+<div class="con_Hot_t"><strong>最新文章</strong> <a href="/Class_5/Default">更多 >></a></div> 
+<ul>
+
+<li><a href="/Item/2955">新增4489个字符-Unicode 15...  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 3958</span> </li>
+
+<li><a href="/Item/2653">FEA 扩展名文件  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 4050</span> </li>
+
+<li><a href="/Item/2601">Unicode 13.0编码表  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 4902</span> </li>
+
+<li><a href="/Item/2600">字体研发新革命-unicode13....  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 2985</span> </li>
+
+<li><a href="/Item/2285">字体字库中ttf和otf格式有...  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 51843</span> </li>
+
+<li><a href="/Item/2097">unicode,ansi,utf-8,unicod...  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 873</span> </li>
+
+<li><a href="/Item/2096">网页编码就是那点事   </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 413</span> </li>
+
+<li><a href="/Item/2084">Unicode 6.1 包含的字形总...  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 812</span> </li>
+
+<li><a href="/Item/2054">ANSI，ISO-8859-1和MacRoma...  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 330</span> </li>
+
+<li><a href="/Item/2053">间距修饰字符大全-Spacing ...  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 756</span> </li>
+
+</ul>
+</div>
+
+<div class="con_main_hot">
+<div class="con_Hot_t"><strong>字体推荐</strong> <a href="/Class_5/Default">更多 >></a></div> 
+<ul>
+
+<li><a href="/Item/2787">逐浪马拉松跑步体育运动综...  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 7460</span> </li>
+
+<li><a href="/Item/2788">逐浪夸父综艺体  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 8009</span> </li>
+
+<li><a href="/Item/2791">逐浪蜜蒙润楷体  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 8945</span> </li>
+
+<li><a href="/Item/2794">逐浪喜迎国庆方盾体  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 10537</span> </li>
+
+<li><a href="/Item/2907">上首方圆体  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 96</span> </li>
+
+<li><a href="/Item/2908">上首金牛体  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 78</span> </li>
+
+<li><a href="/Item/2909">上首朗倩体  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 106</span> </li>
+
+<li><a href="/Item/2910">上首漠云体  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 77</span> </li>
+
+<li><a href="/Item/2911">上首至尊书法体  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 85</span> </li>
+
+<li><a href="/Item/2912">上首星芒体  </a> <span><i class="fa fa-eye" aria-hidden="true"></i> 76</span> </li>
+
+</ul>
+</div>
+
+<div class="con_main_hot">
+<div class="con_Hot_t pb-2"><strong>手机扫码浏览更方便：</strong></div> 
+<img src='/Common/QRCode?url=https://www.ziti163.com/item/2097&pixel=150' alt='' style="width: 16rem;" /> <br>
+<div class="home_sharepage_c">
+<div class="bdsharebuttonbox" style="padding-left:10px;">
+<a href="#" class="bds_more" data-cmd="more"></a>
+<a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a>
+<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</div>
+</div>
+
+
+</div>
+</div>
+</main>
+<!--main end-->
+
+<footer class="bm_Footer">
+<div class="container-xxl">
+<div class="row">
+<div class="col-md-4 bm_Footer_con">
+<div class="bm_Footer_l">
+  <a href="/"><img src="/Template/Font/style/images/logo_n.svg" alt="字体网" /></a>
+<h4>关于字体网ziti163.com</h4>
+</div>
+<p>汉字之美，逐浪而来-字体网是面向大众和专业设计艺术爱好者的公益门户，营建开放、面向人人平等并传承汉字精华的字库体系，交流国际文字，传播造字、用字以及周边产业，为全人类文明之文字精研添砖加瓦。既西学东渐，也追源溯流，将字体置于艺术之中，融于实用并研发系列工具，拓展汉字乃至全球文字的研究领域 [<a href="/Item/20">关于我们</a>]。</p>
+</div>
+<div class="col-md-2 pl-5">
+<ul>
+<li>
+<h4>特色栏目</h4>
+</li>
+<li><a href="/Class_2/Default">业界动态</a></li>
+<li><a href="/Class_10/Default">专家访谈</a></li>
+<li><a href="/Class_1/Default">最新热文</a></li>
+<li><a href="/Class_11/Default">字体学院</a></li>
+<li><a href="/Class_12/Default">海外传真</a></li>
+<li><a href="//www.sjtzj.com">瘦金体</a></li>
+</ul>
+</div>
+<div class="col-md-2 pl-4">
+<ul>
+<li>
+<h4>字体推荐</h4>
+</li>
+<li><a href="/Class_35/Default">华康字库</a></li>
+<li><a href="/Class_16/Default">逐浪字库</a></li>
+<li><a href="/Class_34/Default">微软字库</a></li>
+<li><a href="/Class_17/Default">上首字库</a></li>
+<li><a href="/Class_41/Default">长城字体</a></li>
+<li><a href="/down/">字库中心+</a></li>
+</ul>
+</div>
+<div class="col-md-2">
+<ul>
+<li>
+<h4>工具资源</h4>
+</li>
+<li><a href="/webfont">Webfont用字</a></li>
+<li><a href="/Class_62/Default">国家字库标准</a></li>
+<li><a href="//v.ziti163.com">智写在线做字</a></li>
+<li><a href="/uni">全球Unicode字符总表</a></li>
+<li><a href="/Class_13/Default">字体工具软件</a></li>
+<li><a href="/Class_16/Default">编码知识</a></li>
+<li><a href="https://p.ziti163.com/Class_12/Default" target="_blank">创意字体墙</a></li>
+</ul>
+</div>
+<div class="col-md-2 pl-4">
+<ul>
+<li>
+<h4>资源导航</h4>
+</li>
+<li><a href="/vip/">授权说明</a></li>
+<li><a href="/Item/23">联系我们</a></li>
+<li><a href="/Item/21">常见问题</a></li>
+<li><a href="https://www.z01.com/biz/" target="_blank">认证中心</a></li>
+<li><a href="/Class_24/Default">字体管家</a></li>
+<li><a href="/Class_8/Default">友情链接</a></li>
+<li><a href="/Item/22">版权申明</a></li>
+</ul>
+</div>
+</div>
+<div class="footer_Bottom"> <script src="mobile.js"></script>
+Copyright&copy;2015-2022 中国字体网. All Rights Reserved  投稿与商务:<a href="mailto:web@ziti163.com" target="_blank">web@ziti163.com</a>  <a href="http://www.z01.com" target="_blank">逐浪&reg;CMS</a>旗下<a href="http://www.73ic.com" target="_blank">73ic</a>提供云计算服务 </div>
+</div>
+</footer>
+<!--footer end-->
+<div class="kefu">
+	<ul> <li><a href="/User"><span>会员中心</span><i class="zi zi_user"></i></a><div class="clearfix"></div></li> <li><a href="http://wpa.qq.com/msgrd?v=3&uin=524979923&site=qq&menu=yes" target="_blank"><span>在线客服</span><i class="zi zi_tmQq"></i></a><div class="clearfix"></div></li> <li class="kefu_qrcode"><a href="javascript:;"><span><img src="/Template/Font/style/images/qrcode.jpg" alt="微信二维码" width="155" /></span><i class="zi zi_tmWeixin"></i></a><div class="clearfix"></div></li> <!--<li><a href="/Guest" target="_blank"><span>留言咨询</span><i class="zi zi_pencilalt"></i></a><div class="clearfix"></div></li>--> <li><a href="http://weibo.com/zoomlaziti" target="_blank"><span>新浪微博</span><i class="zi zi_tmWeibo"></i></a><div class="clearfix"></div></li> <li><a href="/Item/23"><span>联系我们</span><i class="zi zi_mobilealt"></i></a><div class="clearfix"></div></li> </ul>
+</div>
+
+<script src="/Template/Font/style/js/bootstrap.bundle.min.js"></script>
+<script src="/Template/Font/style/js/highlight.js"></script>
+<script src="/Template/Font/style/js/highlightjs-line-numbers.js"></script>
+<script>
+//Markdown编辑器之行号与加色显示
+hljs.initHighlightingOnLoad();
+hljs.initLineNumbersOnLoad();
+
+
+//内容区图片解析
+$(".con_Main_c img").each(function(index,item){
+  console.log(item);
+ $(item).after('<div class="con_Main_cImg"><span>'+$(item).attr("alt")+'</span></div>');
+});
+
+
+//侧边导航
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+$(".bm_Wrapper_close a i").click(function(){
+$("#wrapper").removeClass("toggled");
+})
+
+//复制分享标题
+var clipboard = new ClipboardJS('#copybtn', {
+	text: function() {
+		var titles = 'unicode,ansi,utf-8,unicode big endian编码的区别(随便说说字符集和编码 ) ';
+		var webname = '[字体网ziti163.com]';
+		return titles +" "+ window.location.href + " " + "(分享自" +webname + "精品文章)";
+	}
+});
+clipboard.on('success', function(e) {
+	//console.log(e);
+	alert("成功获得分享网址-你可以用Ctrl+V或右键粘贴分享本文给网友^_^");
+});
+
+clipboard.on('error', function(e) {
+	//console.log(e);
+	alert("获取分享地址失败-请检查浏览器设置或联系官网获取帮助");
+});
+
+
+/*显示搜索框*/
+function isSearch(){
+    $(".home_search").css("opacity","1").css("z-index","1").css("right","8.5rem");
+    $(".bm_Header_p").fadeOut(200);
+    $(".home_search .form-control").focus();
+}
+/*关闭搜索框*/
+function isClose(){
+    $(".home_search").css("opacity","0").css("z-index","-1").css("right",".5rem");
+    $(".bm_Header_p").fadeIn(1000);
+}
+</script>
+</body>
+</html><script src="Controls/adminBtn/ZL_AdminBtn.js"></script>

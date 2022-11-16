@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bopomofo Extended_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Bopomofo Extended<mark>注音字母扩展</mark></h2>
+<p>共有<abbr>32</abbr>个区位</p>
+<ul>
+<li><span>&#12704;</span><em>31a0</em></li>
+<li><span>&#12705;</span><em>31a1</em></li>
+<li><span>&#12706;</span><em>31a2</em></li>
+<li><span>&#12707;</span><em>31a3</em></li>
+<li><span>&#12708;</span><em>31a4</em></li>
+<li><span>&#12709;</span><em>31a5</em></li>
+<li><span>&#12710;</span><em>31a6</em></li>
+<li><span>&#12711;</span><em>31a7</em></li>
+<li><span>&#12712;</span><em>31a8</em></li>
+<li><span>&#12713;</span><em>31a9</em></li> 
+<li><span>&#12714;</span><em>31aa</em></li>
+<li><span>&#12715;</span><em>31ab</em></li>
+<li><span>&#12716;</span><em>31ac</em></li>
+<li><span>&#12717;</span><em>31ad</em></li>
+<li><span>&#12718;</span><em>31ae</em></li>
+<li><span>&#12719;</span><em>31af</em></li>
+<li><span>&#12720;</span><em>31b0</em></li>
+<li><span>&#12721;</span><em>31b1</em></li>
+<li><span>&#12722;</span><em>31b2</em></li>
+<li><span>&#12723;</span><em>31b3</em></li>
+<li><span>&#12724;</span><em>31b4</em></li>
+<li><span>&#12725;</span><em>31b5</em></li>
+<li><span>&#12726;</span><em>31b6</em></li>
+<li><span>&#12727;</span><em>31b7</em></li>
+<li><span>&#12728;</span><em>31b8</em></li>
+<li><span>&#12729;</span><em>31b9</em></li> 
+<li><span>&#12730;</span><em>31ba</em></li>
+<li><span>&#12731;</span><em>31bb</em></li>
+<li><span>&#12732;</span><em>31bc</em></li>
+<li><span>&#12733;</span><em>31bd</em></li>
+<li><span>&#12734;</span><em>31be</em></li>
+<li><span>&#12735;</span><em>31bf</em></li>	   
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

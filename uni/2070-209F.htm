@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Superscripts and Subscripts_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Superscripts and Subscripts<mark>上角（标）和下角（标）文字</mark></h2>
+<p>共有<abbr>48</abbr>个区位</p>
+<ul>
+<li><span>&#8304;</span><em>2070</em></li>
+<li><span>&#8305;</span><em>2071</em></li>
+<li><span>&#8306;</span><em>2072</em></li>
+<li><span>&#8307;</span><em>2073</em></li>
+<li><span>&#8308;</span><em>2074</em></li>
+<li><span>&#8309;</span><em>2075</em></li>
+<li><span>&#8310;</span><em>2076</em></li>
+<li><span>&#8311;</span><em>2077</em></li>
+<li><span>&#8312;</span><em>2078</em></li>
+<li><span>&#8313;</span><em>2079</em></li>
+<li><span>&#8314;</span><em>207a</em></li>
+<li><span>&#8315;</span><em>207b</em></li>
+<li><span>&#8316;</span><em>207c</em></li>
+<li><span>&#8317;</span><em>207d</em></li>
+<li><span>&#8318;</span><em>207e</em></li>
+<li><span>&#8319;</span><em>207f</em></li>
+<li><span>&#8320;</span><em>2080</em></li>
+<li><span>&#8321;</span><em>2081</em></li>
+<li><span>&#8322;</span><em>2082</em></li>
+<li><span>&#8323;</span><em>2083</em></li>
+<li><span>&#8324;</span><em>2084</em></li>
+<li><span>&#8325;</span><em>2085</em></li>
+<li><span>&#8326;</span><em>2086</em></li>
+<li><span>&#8327;</span><em>2087</em></li>
+<li><span>&#8328;</span><em>2088</em></li>
+<li><span>&#8329;</span><em>2089</em></li>
+<li><span>&#8330;</span><em>208a</em></li>
+<li><span>&#8331;</span><em>208b</em></li>
+<li><span>&#8332;</span><em>208c</em></li>
+<li><span>&#8333;</span><em>208d</em></li>
+<li><span>&#8334;</span><em>208e</em></li>
+<li><span>&#8335;</span><em>208f</em></li>
+<li><span>&#8336;</span><em>2090</em></li>
+<li><span>&#8337;</span><em>2091</em></li>
+<li><span>&#8338;</span><em>2092</em></li>
+<li><span>&#8339;</span><em>2093</em></li>
+<li><span>&#8340;</span><em>2094</em></li>
+<li><span>&#8341;</span><em>2095</em></li>
+<li><span>&#8342;</span><em>2096</em></li>
+<li><span>&#8343;</span><em>2097</em></li>
+<li><span>&#8344;</span><em>2098</em></li>
+<li><span>&#8345;</span><em>2099</em></li>
+<li><span>&#8346;</span><em>209a</em></li>
+<li><span>&#8347;</span><em>209b</em></li>
+<li><span>&#8348;</span><em>209c</em></li>
+<li><span>&#8349;</span><em>209d</em></li>
+<li><span>&#8350;</span><em>209e</em></li>
+<li><span>&#8351;</span><em>209f</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>

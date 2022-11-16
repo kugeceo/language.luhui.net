@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Miscellaneous Mathematical Symbols-A_Unicode国际字符表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<link href="bootstrap.min.css" rel="stylesheet"/>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+<script src="jquery.min.js" ></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="scrolltopcontrol.js"></script>
+<link rel="stylesheet" href="font.css" >
+</head>
+<body>
+<script src="header.js"></script>
+<!--header end-->
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="con_Tent_left">
+<div class="con_Tent_b">
+<script src="con_Tent_left.js"></script>
+</div>
+</div>
+
+<div class="con_Tent_r">
+<main class="con_Tent_main">
+<h2>Miscellaneous Mathematical Symbols-A<mark>各种数学符号A</mark></h2>
+<p>共有<abbr>48</abbr>个区位</p>
+<ul>
+<li><span>&#10176;</span><em>27c0</em></li>
+<li><span>&#10177;</span><em>27c1</em></li>
+<li><span>&#10178;</span><em>27c2</em></li>
+<li><span>&#10179;</span><em>27c3</em></li>
+<li><span>&#10180;</span><em>27c4</em></li>
+<li><span>&#10181;</span><em>27c5</em></li>
+<li><span>&#10182;</span><em>27c6</em></li>
+<li><span>&#10183;</span><em>27c7</em></li>
+<li><span>&#10184;</span><em>27c8</em></li>
+<li><span>&#10185;</span><em>27c9</em></li>
+<li><span>&#10186;</span><em>27ca</em></li>
+<li><span>&#10187;</span><em>27cb</em></li>
+<li><span>&#10188;</span><em>27cc</em></li>
+<li><span>&#10189;</span><em>27cd</em></li>
+<li><span>&#10190;</span><em>27ce</em></li>
+<li><span>&#10191;</span><em>27cf</em></li>
+<li><span>&#10192;</span><em>27d0</em></li>
+<li><span>&#10193;</span><em>27d1</em></li>
+<li><span>&#10194;</span><em>27d2</em></li>
+<li><span>&#10195;</span><em>27d3</em></li>
+<li><span>&#10196;</span><em>27d4</em></li>
+<li><span>&#10197;</span><em>27d5</em></li>
+<li><span>&#10198;</span><em>27d6</em></li>
+<li><span>&#10199;</span><em>27d7</em></li>
+<li><span>&#10200;</span><em>27d8</em></li>
+<li><span>&#10201;</span><em>27d9</em></li>
+<li><span>&#10202;</span><em>27da</em></li>
+<li><span>&#10203;</span><em>27db</em></li>
+<li><span>&#10204;</span><em>27dc</em></li>
+<li><span>&#10205;</span><em>27dd</em></li>
+<li><span>&#10206;</span><em>27de</em></li>
+<li><span>&#10207;</span><em>27df</em></li>
+<li><span>&#10208;</span><em>27e0</em></li>
+<li><span>&#10209;</span><em>27e1</em></li>
+<li><span>&#10210;</span><em>27e2</em></li>
+<li><span>&#10211;</span><em>27e3</em></li>
+<li><span>&#10212;</span><em>27e4</em></li>
+<li><span>&#10213;</span><em>27e5</em></li>
+<li><span>&#10214;</span><em>27e6</em></li>
+<li><span>&#10215;</span><em>27e7</em></li>
+<li><span>&#10216;</span><em>27e8</em></li>
+<li><span>&#10217;</span><em>27e9</em></li>
+<li><span>&#10218;</span><em>27ea</em></li>
+<li><span>&#10219;</span><em>27eb</em></li>
+<li><span>&#10220;</span><em>27ec</em></li>
+<li><span>&#10221;</span><em>27ed</em></li>
+<li><span>&#10222;</span><em>27ee</em></li>
+<li><span>&#10223;</span><em>27ef</em></li>
+</ul>
+<div class="clearfix"></div>
+<script src="footer.js"></script>
+</main><!--main end-->
+</div>
+</div>
+</div>
+<script>
+//获取url中的参数
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r != null) return unescape(r[2]); return null; //返回参数值
+}
+var GetID=getUrlParam('id');
+
+$(".nav"+GetID).addClass("active");
+</script>
+</body>
+</html>
